@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 :dashboard
 
   def index 
-    @posts = Post.order(create_at: :desc)
+    @posts = Post.order(created_at: :desc)
   end
 
   def dashboard
